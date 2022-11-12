@@ -6,13 +6,12 @@ public class Main {
         int fullAmount = 0;
         int monthlyAmount = 15000;
         int i = 0;
-        while (fullAmount <= 2459000) {
+        while (fullAmount < 2459000) {
             i++;
             fullAmount = fullAmount + fullAmount / 100;
             fullAmount = fullAmount + monthlyAmount;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + fullAmount + " рублей.");
             }
-        // Почему цикл продолжается после 2459000? Что я неправильно сделала?
 
         //Задание 2.1
         System.out.println("Задание 2.1");
@@ -30,10 +29,12 @@ public class Main {
         System.out.println ("");
         System.out.println("Задание 3.1");
         int population = 12_000_000;
-        int born = population / 1000 * 17;
-        int dead = population / 1000 * 8;
+        int born;
+        int dead;
         int year;
         for (year = 1; year <=10; year ++) {
+            born = population / 1000 * 17;
+            dead = population / 1000 * 8;
             population = population + born - dead;
             System.out.println("Год " + year + ", численность населения составляет " + population);
         }
