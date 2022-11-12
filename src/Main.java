@@ -12,6 +12,7 @@ public class Main {
             fullAmount = fullAmount + monthlyAmount;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + fullAmount + " рублей.");
             }
+        // Почему цикл продолжается после 2459000? Что я неправильно сделала?
 
         //Задание 2.1
         System.out.println("Задание 2.1");
